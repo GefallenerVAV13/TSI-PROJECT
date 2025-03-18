@@ -1,14 +1,38 @@
-import React, { Component } from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default class Header extends Component {
-    render() {
-        return (
-            <div>
-                <a href='/'>Home</a>
-                <a href='/about'>About</a>
-            </div>
-            
+const Header = () => {
+  return (
+    <header className="bg-purple-950 text-white py-10">
+      <div className="container mx-auto px-4 py-6 flex justify-between items-center">
+        <div className="text-2xl font-bold text-white">
+          <Link to="/" className="hover:text-blue-600 transition duration-300">
+            MyLogo
+          </Link>
+        </div>
+        <nav className="hidden md:flex space-x-6 text-white">
+          <Link
+            to="/"
+            className="hover:text-blue-600 transition duration-300"
+          >
+            Home
+          </Link>
+          <Link
+            to="/about"
+            className="hover:text-blue-600 transition duration-300"
+          >
+            About
+          </Link>
+          <Link
+            to="/blog"
+            className="hover:text-blue-600 transition duration-300"
+          >
+            Blog
+          </Link>
+        </nav>
+      </div>
+    </header>
+  );
+};
 
-        )
-    }
-}
+export default Header;
