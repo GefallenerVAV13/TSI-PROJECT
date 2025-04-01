@@ -22,6 +22,7 @@ function App() {
       </BrowserRouter>
       <Footer />
 
+      
       {/* <Footer />
       <BrowserRouter>
         <Routes>
