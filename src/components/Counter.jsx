@@ -3,11 +3,11 @@ import React, {useEffect, useState} from "react";
 
 export const Counter = () => {
     const [count, setCount] = useState<number>(0);
-    const [items, setItems] = useState(["гашиш", "снюсик", "монстр черный оригинальный"]);
+    const [items, setItems] = useState(["Товар3", "Товар2", "Товар1"]);
     const [newElement, setNewElement] = useState("");
 
     useEffect(() => {
-        console.log(`Массив ништяков изменился: ${items}`);
+        console.log(`Массив изменился: ${items}`);
     })
 
     return (
